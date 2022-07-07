@@ -38,7 +38,9 @@ $opts = all("options", ['subject_id' => $_GET['id']]);
                 $rate = $opt['total'] / $total;
                 
                 //取到小數點第二位
-                $rate2 = bcadd(0,$rate,4);
+                // $rate2 = bcadd(0,$rate,4);
+                $rate2 = number_format($rate,2);
+
 
                 //隨機數字 FOR 色碼
                 $rand1 = rand(0,255);
