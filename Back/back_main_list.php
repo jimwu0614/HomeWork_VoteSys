@@ -17,6 +17,12 @@ if (isset($_GET['filter'])) {
 
 
 ?>
+
+<style>
+    tr:nth-child(1){
+	width: 323px;
+	}
+</style>
 <header>
     <label style="text-align: left;" for="types">Category</label>
     <label style="text-align: right;">Arrang By</label>
@@ -170,7 +176,7 @@ if (isset($_GET['filter'])) {
 <div class="table-box">
     <table>
         <thead>
-            <th>Topic</th>
+            <th style="width: 323px">Topic</th>
             <th>Single/Multiple</th>
             <th>Duration</th>
             <th>Remain</th>
@@ -203,13 +209,13 @@ if (isset($_GET['filter'])) {
 
             <tr>
             <!-- 投票名 -->
-            <td><a class="topic" href="index.php?do=vote_result&id=<?=$subject['id']?>"><?=$subject['subject']?></a></td>
+            <td style="width: 323px"><a class="topic" href="index.php?do=vote_result&id=<?=$subject['id']?>"><?=$subject['subject']?></a></td>
 
         <!-- 單複選題 -->
     <?php
         if ($subject['multiple'] == 0) {
     ?>
-        
+         
             <td>Single</td>
         
     <?php
