@@ -1,6 +1,10 @@
 <?php
 
 include_once "./api/base.php";
+
+if(!isset($_SESSION['acc'])){
+    to("index.php");
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
