@@ -2,7 +2,7 @@
 
 include_once "./api/base.php";
 
-if(!isset($_SESSION['acc'])){
+if(!isset($_SESSION['adacc'])){
     to("index.php");
 }
 ?>

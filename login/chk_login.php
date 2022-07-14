@@ -77,7 +77,7 @@ echo "<hr>";
 
 //管理員跟一般會員分流
 if($adminAcc == 'admin' && $adminPW == "admin"){
-    $_SESSION['acc']=$adminAcc;
+    $_SESSION['adacc']=$adminAcc;
     $_SESSION['id']="$member_id";
     $_SESSION['name']="$member_name";
     header("location:../back.php");
