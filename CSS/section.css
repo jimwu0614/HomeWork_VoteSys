@@ -75,6 +75,9 @@ font-size: 25px;
 
 .container article{
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 

@@ -188,6 +188,7 @@
                 }
                 else
                 {
+                    // $(".card").removeClass("active");
                     $("#card_" + tmpNo).addClass("active");
                 }
                  
