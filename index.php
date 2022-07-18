@@ -188,7 +188,8 @@
                 }
                 else
                 {
-                    // $(".card").removeClass("active");
+                    //在拉開另一個的時候  把原本的彈回去
+                    $(".card").removeClass("active");
                     $("#card_" + tmpNo).addClass("active");
                 }
                  
